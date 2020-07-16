@@ -10,6 +10,8 @@ El examen tiene ademas una nota de aprobacion y un criterio de correcion.
 Tengo varios criterios para calcular la nota. En algunos se calcula la nota en base a un conjunto de otros criterios. ¿Estos "criterios compuestos" pueden tener mas criterios compuestos a su vez? Supongo que si.
 Asi que por eso uso patron Composite para esto. Entonces tengo una interfaz en comun `CriterioNota` que implementan los distintos criterios. Los criterios "Compuestos" los agrupe con una clase abstracta que tiene la lista de criterios que usan para calcular la nota. Despues cada criterio compuesto en particular implementa el metodo getNota segun su logica.
 
+![](https://raw.githubusercontent.com/jaks97/DdS-Corrector-de-examenes/master/Diagrama%20de%20clases.svg)
+
 ---
 
 Para los agregados:
